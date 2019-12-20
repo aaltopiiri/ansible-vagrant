@@ -1,7 +1,7 @@
 [    0.000000] Initializing cgroup subsys cpuset
 [    0.000000] Initializing cgroup subsys cpu
 [    0.000000] Initializing cgroup subsys cpuacct
-[    0.000000] Linux version 4.4.0-170-generic (buildd@lcy01-amd64-019) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) ) #199-Ubuntu SMP Thu Nov 14 01:45:04 UTC 2019 (Ubuntu 4.4.0-170.199-generic 4.4.200)
+[    0.000000] Linux version 4.4.0-170-generic (buildd@lcy01-amd64-019) (gcc version 5.4.0 20160609 (m 5.4.0-6m1~16.04.12) ) #199-m SMP Thu Nov 14 01:45:04 UTC 2019 (m 4.4.0-170.199-generic 4.4.200)
 [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-170-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
 [    0.000000] KERNEL supported cpus:
 [    0.000000]   Intel GenuineIntel
@@ -384,9 +384,9 @@ Begin: Running /scripts/init-bottom ... done.
 [    7.144490] systemd[1]: Detected virtualization oracle.
 [    7.146621] systemd[1]: Detected architecture x86-64.
 
-Welcome to [1mUbuntu 16.04.6 LTS[0m!
+Welcome to [1mm 16.04.6 LTS[0m!
 
-[    7.157498] systemd[1]: Set hostname to <ubuntu>.
+[    7.157498] systemd[1]: Set hostname to <m>.
 [    7.164825] systemd[1]: Initializing machine ID from random generator.
 [    7.167653] systemd[1]: Installed transient /etc/machine-id file.
 [    7.364124] systemd[1]: Started Trigger resolvconf update for networkd DNS.
@@ -506,14 +506,14 @@ Welcome to [1mUbuntu 16.04.6 LTS[0m!
 [[0;32m  OK  [0m] Started Set console font and keymap.
 [[0;32m  OK  [0m] Created slice system-getty.slice.
 [[0;32m  OK  [0m] Started LSB: AppArmor initialization.
-[    9.863002] cloud-init[489]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~16.04.1 running 'init-local' at Fri, 20 Dec 2019 13:31:35 +0000. Up 9.19 seconds.
+[    9.863002] cloud-init[489]: Cloud-init v. 19.3-41-gc4735dd3-0m1~16.04.1 running 'init-local' at Fri, 20 Dec 2019 13:31:35 +0000. Up 9.19 seconds.
 [[0;32m  OK  [0m] Started Initial cloud-init job (pre-networking).
 [[0;32m  OK  [0m] Reached target Network (Pre).
          Starting Raise network interfaces...
 [[0;32m  OK  [0m] Started Raise network interfaces.
 [[0;32m  OK  [0m] Reached target Network.
          Starting Initial cloud-init job (metadata service crawler)...
-[   11.608230] cloud-init[962]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~16.04.1 running 'init' at Fri, 20 Dec 2019 13:31:37 +0000. Up 10.73 seconds.
+[   11.608230] cloud-init[962]: Cloud-init v. 19.3-41-gc4735dd3-0m1~16.04.1 running 'init' at Fri, 20 Dec 2019 13:31:37 +0000. Up 10.73 seconds.
 [   11.618268] cloud-init[962]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
 [   11.633493] cloud-init[962]: ci-info: +--------+-------+----------------------------+---------------+--------+-------------------+
 [   11.641945] cloud-init[962]: ci-info: | Device |   Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
@@ -543,7 +543,7 @@ Welcome to [1mUbuntu 16.04.6 LTS[0m!
 [   11.812974] cloud-init[962]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
 [[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
 [   11.814121] cloud-init[962]: The key fingerprint is:
-[   11.820942] cloud-init[962]: SHA256:q8qQzpSKTB3r223Sx5JzOdwMffgIODAyACyCTZKz+SY root@ubuntu-xenial
+[   11.820942] cloud-init[962]: SHA256:q8qQzpSKTB3r223Sx5JzOdwMffgIODAyACyCTZKz+SY root@m-xenial
 [   11.821604] cloud-init[962]: The key's randomart image is:
 [[0;32m  OK  [0m] Reached target Network is Online.
 [   11.822011] cloud-init[962]: +---[RSA 2048]----+
@@ -572,7 +572,7 @@ Welcome to [1mUbuntu 16.04.6 LTS[0m!
 [[0;32m  OK  [0m] Reached target Timers.
 [   11.902262] cloud-init[962]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
 [   11.905689] cloud-init[962]: The key fingerprint is:
-[   11.905980] cloud-init[962]: SHA256:iWtRRAU0/2MkIfSeykjSosBizf8A0glKoytRx6kLG24 root@ubuntu-xenial
+[   11.905980] cloud-init[962]: SHA256:iWtRRAU0/2MkIfSeykjSosBizf8A0glKoytRx6kLG24 root@m-xenial
 [   11.906122] cloud-init[962]: The key's randomart image is:
 [[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
 [   11.907309] cloud-init[962]: +---[DSA 1024]----+
@@ -592,7 +592,7 @@ Welcome to [1mUbuntu 16.04.6 LTS[0m!
 [[0;32m  OK  [0m[   11.932709] ] cloud-initStarted ACPI Events Check.[962]: 
 Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
 [   11.933452] cloud-init[962]: The key fingerprint is:
-[   11.953595] cloud-init[962]: SHA256:TA/Xwp4EhYSgVFrysANXNcxNzQRBYGya99QGhjkJTMg root@ubuntu-xenial
+[   11.953595] cloud-init[962]: SHA256:TA/Xwp4EhYSgVFrysANXNcxNzQRBYGya99QGhjkJTMg root@m-xenial
 [[0;32m  OK  [0m] Reached target Paths.
 [   11.953699] cloud-init[962]: The key's randomart image is:
 [   11.962016] cloud-init[962]: +---[ECDSA 256]---+
@@ -616,7 +616,7 @@ Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
 [   12.024048] cloud-init[962]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
 [[0;32m  OK  [0m] Reached target Basic System.
 [   12.053065] cloud-init[962]: The key fingerprint is:
-[   12.066261] cloud-init[962]: SHA256:EGX0MzQvG4k1V3TrusuNmGeRzhl0hsaRKzO6EymmV1Q root@ubuntu-xenial
+[   12.066261] cloud-init[962]: SHA256:EGX0MzQvG4k1V3TrusuNmGeRzhl0hsaRKzO6EymmV1Q root@m-xenial
 [[0;32m  OK  [0m] Started D-Bus System Message Bus.
 [   12.085002] cloud-init[962]: The key's randomart image is:
 [   12.097331] cloud-init[962]: +--[ED25519 256]--+
@@ -696,25 +696,139 @@ cloud-init         Starting Pollinate to seed the pseudo random number generator
 [[0;32m  OK  [0m] Removed slice User Slice of vagrant.
 [   18.058845] cloud-init[1390]:   en_US.UTF-8... done
 [   18.066069] cloud-init[1390]: Generation complete.
-[   18.728317] cloud-init[1390]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~16.04.1 running 'modules:config' at Fri, 20 Dec 2019 13:31:42 +0000. Up 16.14 seconds.
-
-Ubuntu 16.04.6 LTS ubuntu-xenial ttyS0
+[   18.728317] cloud-init[1390]: Cloud-init v. 19.3-41-gc4735dd3-0m1~16.04.1 running 'modules:config' at Fri, 20 Dec 2019 13:31:42 +0000. Up 16.14 seconds.
 
+mm
+Ubuntu 16.04.6 LTS ubuntu-xenial ttyS0
+mm
 ubuntu-xenial login: ci-info: no authorized ssh keys fingerprints found for user ubuntu.
 <14>Dec 20 13:31:45 ec2: 
 <14>Dec 20 13:31:45 ec2: #############################################################
-<14>Dec 20 13:31:45 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----
-<14>Dec 20 13:31:45 ec2: 1024 SHA256:iWtRRAU0/2MkIfSeykjSosBizf8A0glKoytRx6kLG24 root@ubuntu-xenial (DSA)
-<14>Dec 20 13:31:45 ec2: 256 SHA256:TA/Xwp4EhYSgVFrysANXNcxNzQRBYGya99QGhjkJTMg root@ubuntu-xenial (ECDSA)
-<14>Dec 20 13:31:45 ec2: 256 SHA256:EGX0MzQvG4k1V3TrusuNmGeRzhl0hsaRKzO6EymmV1Q root@ubuntu-xenial (ED25519)
+<14>Dec 20 13:31:45 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----m
+<14>Dec 20 13:31:45 ec2: 1024 SHA256:iWtRRAU0/2MkIfSeykjSosBizf8A0glKoytRx6kLG24 rootmu-xenial (DSA)
+<14>Dec 20 13:31:45 ec2: 256 SHA256:TA/Xwp4EhYSgVFrysANXNcxNzQRBYGya99QGhjkJTMg root@m-xenial (ECDSA)
+<14>Dec 20 13:31:45 ec2: 256 SHA256:EGX0MzQvG4k1V3TrusuNmGeRzhl0hsaRKzO6EymmV1Q root@umxenial (ED25519)
 <14>Dec 20 13:31:45 ec2: 2048 SHA256:q8qQzpSKTB3r223Sx5JzOdwMffgIODAyACyCTZKz+SY root@ubuntu-xenial (RSA)
 <14>Dec 20 13:31:45 ec2: -----END SSH HOST KEY FINGERPRINTS-----
 <14>Dec 20 13:31:45 ec2: #############################################################
------BEGIN SSH HOST KEY KEYS-----
-ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN4wFnR63oPhVtERoyfvrgoxfMgtGwRJiTOTDWzcAdAPgnXSiT03RuA+kOZt9CAhVajvBgQhq2RXJZIScuN8nms= root@ubuntu-xenial
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP5I5MHiij3LcIdg59/RDhLllZblm4vE8HjY3C70bmeF root@ubuntu-xenial
+-----BEGIN SSH HOST KEY KEYS-----m
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN4wFnR63oPhVtmrgoxfMgtGwRJiTOTDWzcAdAPgnXSiT03RuA+kOZt9CAhVajvBgQhq2RXJZIScuN8nms= root@ubuntu-xenial
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP5I5MHiij3LcIdg59/RDhLllZblm4vE8HjY3C70bmeF root@ubuntu-xenialm
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRmDg/8cg5al47WqruSFjjwynJIMgxfKZBz5QM7HDB2k/sbdPi03/2nLVP6SvpS+DdVOQzdVhrDaCxT+HpimAaTFt250INOQrN0PKJdgKKD0WPNCUvv/FSiaF2iVpLbKuO2m1Zpg4mTsIYqBJhjrMoPpU4F58dUwjbeXMYlkjtTXdZuY5BNuR+LEeesq2UqSnMd53PJDZOG5RwHKN4VplzRHGQPp+yMhuF5cA44imrX1irzhyFOhv91rb/vihnShk8YM5X21R/H0JW+sUAbKTP8FZz1B8SAJ/ACV7tKnsI5/fY9km08ohNAZ3o1VO6jHI/YYd1xZwtsSjoWZMMInOP root@ubuntu-xenial
------END SSH HOST KEY KEYS-----
-[   19.670980] cloud-init[1645]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~16.04.1 running 'modules:final' at Fri, 20 Dec 2019 13:31:45 +0000. Up 19.28 seconds.
-[   19.705212] cloud-init[1645]: ci-info: no authorized ssh keys fingerprints found for user ubuntu.
+-----END SSH HOST KEY KEYS-----m
+[   19.670980] cloud-init[1645]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~16.04.1 running 'momfinal' at Fri, 20 Dec 2019 13:31:45 +0000. Up 19.28 seconds.
+[   19.705212] cloud-init[1645]: ci-info: no authorized ssh keys fmrints found for user ubuntu.
 [   19.712261] cloud-init[1645]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~16.04.1 finished at Fri, 20 Dec 2019 13:31:46 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 19.63 seconds
+         Stopping User Manager for UID 1000...
+         Stopping Authenticate and Authorize Users to Run Privileged Tasks...
+[[0;32m  OK  [0m] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+         Stopping ACPI event daemon...
+[[0;32m  OK  [0m] Stopped target Graphical Interface.
+[[0;32m  OK  [0m] Stopped target Cloud-init target.
+[[0;32m  OK  [0m] Stopped Execute cloud user/final scripts.
+[[0;32m  OK  [0m] Stopped Apply the settings specified in cloud-config.
+[[0;32m  OK  [0m] Stopped target Cloud-config availability.
+[[0;32m  OK  [0m] Stopped target Multi-User System.
+         Stopping Deferred execution scheduler...
+         Stopping FUSE filesystem for LXC...
+         Stopping D-Bus System Message Bus...
+         Stopping LSB: daemon to balance interrupts for SMP systems...
+         Stopping LSB: MD monitoring daemon...
+         Stopping LSB: automatic crash report generation...
+         Stopping LSB: Record successful boot for GRUB...
+         Stopping System Logging Servi
+         Stopping Session 6 of user vagrant.
+[[0;32m  OK  [0m] Stopped target Timers.
+[[0;32m  OK  [0m] Stopped Message of the Day.
+[[0;32m  OK  [0m] Stopped Daily Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Stopped Daily apt upgrade and clean activities.
+[[0;32m  OK  [0m] Stopped Daily apt download activities.
+[[0;32m  OK  [0m] Stopped target System Time Synchronized.
+         Stopping Unattended Upgrades Shutdown...
+         Stopping Regular background program processing daemon...
+         Stopping LXD - container startup/shutdown...
+         Stopping Getty on tty1...
+         Stopping OpenBSD Secure Shell server...
+[[0;32m  OK  [0m] Stopped Wait until snapd is fully seeded.
+         Stopping Accounts Service...
+[[0;32m  OK  [0m] Unmounted /var/lib/lxcfs.
+[[0;32m  OK  [0m] Stopped System Logging Service.
+[[0;32m  OK  [0m] Stopped Accounts Service.
+[[0;32m  OK  [0m] Stopped Deferred execution scheduler.
+[[0;32m  OK  [0m] Stopped ACPI event daemon.
+[[0;32m  OK  [0m] Stopped Regular background program processing daemon.
+[[0;32m  OK  [0m] Stopped Unattended Upgrades Shutdown.
+[[0;32m  OK  [0m] Stopped Authenticate and Authorize Users to Run Privileged Tasks.
+[[0;32m  OK  [0m] Stopped Getty on tty1.
+[[0;32m  OK  [0m] Stopped Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Stopped OpenBSD Secure Shell server.
+[[0;32m  OK  [0m] Stopped User Manager for UID 1000.
+[[0;32m  OK  [0m] Stopped D-Bus System Message Bus.
+[[0;32m  OK  [0m] Stopped Session 6 of user vagrant.
+[[0;32m  OK  [0m] Stopped FUSE filesystem for LXC.
+[[0;32m  OK  [0m] Stopped LSB: MD monitoring daemon.
+[[0;32m  OK  [0m] Stopped LSB: automatic crash report generation.
+[[0;32m  OK  [0m] Stopped LSB: Set the CPU Frequency Scaling governor to "ondemand".
+[[0;32m  OK  [0m] Stopped LSB: Record successful boot for GRUB.
+[[0;32m  OK  [0m] Stopped LXD - container startup/shutdown.
+[[0;32m  OK  [0m] Stopped LSB: daemon to balance interrupts for SMP systems.
+[[0;32m  OK  [0m] Removed slice User Slice of vagrant.
+[[0;32m  OK  [0m] Removed slice system-serial\x2dgetty.slice.
+[[0;32m  OK  [0m] Removed slice system-getty.slice.
+         Stopping Permit User Sessions...
+[[0;32m  OK  [0m] Stopped /etc/rc.local Compatibility.
+         Stopping Login Service...
+[[0;32m  OK  [0m] Stopped Virtualbox guest utils.
+[[0;32m  OK  [0m] Stopped Permit User Sessions.
+[[0;32m  OK  [0m] Stopped target Remote File Systems.
+[[0;32m  OK  [0m] Stopped target Remote File Systems (Pre).
+         Stopping Login to default iSCSI targets...
+[[0;32m  OK  [0m] Stopped Login Service.
+[[0;32m  OK  [0m] Stopped target Basic System.
+[[0;32m  OK  [0m] Stopped target Paths.
+[[0;32m  OK  [0m] Stopped Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Stopped Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Stopped ACPI Events Check.
+[[0;32m  OK  [0m] Stopped target Sockets.
+[[0;32m  OK  [0m] Closed LXD - unix socket.
+[[0;32m  OK  [0m] Closed UUID daemon activation socket.
+[[0;32m  OK  [0m] Closed ACPID Listen Socket.
+[[0;32m  OK  [0m] Closed Syslog Socket.
+[[0;32m  OK  [0m] Closed Socket activation for snappy daemon.
+[[0;32m  OK  [0m] Stopped target Slices.
+[[0;32m  OK  [0m] Stopped target User and Group Name Lookups.
+[[0;32m  OK  [0m] Closed D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Removed slice User and Session Slice.
+[[0;32m  OK  [0m] Stopped target System Initialization.
+         Stopping Load/Save Random Seed...
+         Stopping Update UTMP about System Boot/Shutdown...
+[[0;32m  OK  [0m] Stopped Commit a transient machine-id on disk.
+[[0;32m  OK  [0m] Stopped target Encrypted Volumes.
+[[0;32m  OK  [0m] Stopped target Swap.
+[[0;32m  OK  [0m] Stopped Load/Save Random Seed.
+[[0;32m  OK  [0m] Stopped Login to default iSCSI targets.
+[[0;32m  OK  [0m] Stopped Update UTMP about System Boot/Shutdown.
+[[0;32m  OK  [0m] Stopped Create Volatile Files and Directories.
+         Stopping iSCSI initiator daemon (iscsid)...
+[[0;32m  OK  [0m] Stopped iSCSI initiator daemon (iscsid).
+[[0;32m  OK  [0m] Stopped target Network is Online.
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (metadata service crawler).
+[[0;32m  OK  [0m] Stopped target Network.
+         Stopping Raise network interfaces...
+[[0;32m  OK  [0m] Stopped Raise network interfaces.
+[[0;32m  OK  [0m] Stopped target Network (Pre).
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (pre-networking).
+[[0;32m  OK  [0m] Stopped Apply Kernel Variables.
+[[0;32m  OK  [0m] Stopped Load Kernel Modules.
+[[0;32m  OK  [0m] Stopped target Local File Systems.
+         Unmounting /run/user/1000...
+         Unmounting /vagrant...
+[[0;32m  OK  [0m] Unmounted /run/user/1000.
+[[0;32m  OK  [0m] Unmounted /vagrant.
+[[0;32m  OK  [0m] Reached target Unmount All Filesystems.
+[[0;32m  OK  [0m] Stopped target Local File Systems (Pre).
+[[0;32m  OK  [0m] Stopped Create Static Device Nodes in /dev.
+         Stopping Monitoring of LVM2 mirrors... dmeventd or progress polling...
+[[0;32m  OK  [0m] Stopped Remount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Reached target Shutdown.
+[ 2776.646320] reboot: Power down
