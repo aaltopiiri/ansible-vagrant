@@ -1,14 +1,14 @@
 Vagrant.configure("2") do |config|
-    config.vm.define "m" do |m|
-      m.vm.box = "ubuntu/xenial64"
-      m.vm.hostname = 'ubuntu'
+    config.vm.define "m1" do |m1|
+      m1.vm.box = "ubuntu/xenial64"
+      m1.vm.hostname = 'ubuntu'
       #m.disksize.size = '2GB'
 
-      m.vm.network :private_network, ip: "192.168.33.11"
-      m.vm.network :forwarded_port, guest: 22, host: 10221, id: "ssh"
+      m1.vm.network :private_network, ip: "192.168.33.11"
+      m1.vm.network :forwarded_port, guest: 22, host: 10221, id: "ssh"
 
 
-      m.vm.provider :virtualbox do |v|
+      m1.vm.provider :virtualbox do |v|
         v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
         v.customize ["modifyvm", :id, "--memory", 512]
         v.customize ["modifyvm", :id, "--name", "m"]
@@ -16,15 +16,15 @@ Vagrant.configure("2") do |config|
       end
     end
 
-    config.vm.define "m" do |m|
-      m.vm.box = "debian/stretch64"
-      m.vm.hostname = 'debian'
+    config.vm.define "m2" do |m2|
+      m2.vm.box = "debian/stretch64"
+      m2.vm.hostname = 'debian'
       #m.disksize.size = '2GB'
 
-      m.vm.network :private_network, ip: "192.168.33.12"
-      m.vm.network :forwarded_port, guest: 22, host: 10222, id: "ssh"
+      m2.vm.network :private_network, ip: "192.168.33.12"
+      m2.vm.network :forwarded_port, guest: 22, host: 10222, id: "ssh"
 
-      m.vm.provider :virtualbox do |v|
+      m2.vm.provider :virtualbox do |v|
         v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
         v.customize ["modifyvm", :id, "--memory", 512]
         v.customize ["modifyvm", :id, "--name", "m"]
@@ -32,15 +32,15 @@ Vagrant.configure("2") do |config|
       end
     end
 
-    config.vm.define "m" do |m|
-        m.vm.box = "centos/7"
-        m.vm.hostname = 'centos'
+    config.vm.define "m3" do |m3|
+        m3.vm.box = "centos/7"
+        m3.vm.hostname = 'centos'
         #m.disksize.size = '2GB'
 
-        m.vm.network :private_network, ip: "192.168.33.13"
-        m.vm.network :forwarded_port, guest: 22, host: 10223, id: "ssh"
+        m3.vm.network :private_network, ip: "192.168.33.13"
+        m3.vm.network :forwarded_port, guest: 22, host: 10223, id: "ssh"
 
-        m.vm.provider :virtualbox do |v|
+        m3.vm.provider :virtualbox do |v|
           v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
           v.customize ["modifyvm", :id, "--memory", 512]
           v.customize ["modifyvm", :id, "--name", "m"]
