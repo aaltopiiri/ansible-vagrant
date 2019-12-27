@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
       m1.vm.provider :virtualbox do |v|
         v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
         v.customize ["modifyvm", :id, "--memory", 512]
-        v.customize ["modifyvm", :id, "--name", "m"]
+        v.customize ["modifyvm", :id, "--name", "v1"]
         #v.customize ["modifyhd", "dbba052c-bc41-4416-8a77-3909fc8a5271", "--resize", "2048"]
       end
     end
@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
       m2.vm.provider :virtualbox do |v|
         v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
         v.customize ["modifyvm", :id, "--memory", 512]
-        v.customize ["modifyvm", :id, "--name", "m"]
+        v.customize ["modifyvm", :id, "--name", "v2"]
         #v.customize ["modifyhd", "e1e96847-ea50-491a-bb32-36c9cacc3cf2", "--resize", "2048"]
       end
     end
@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
         m3.vm.provider :virtualbox do |v|
           v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
           v.customize ["modifyvm", :id, "--memory", 512]
-          v.customize ["modifyvm", :id, "--name", "m"]
+          v.customize ["modifyvm", :id, "--name", "v3"]
           #v.customize ["modifyhd", "1bf13eeb-1147-4a50-96e6-ca171fc273fe", "--resize", "2048"]
         end
       end
